@@ -1,6 +1,8 @@
+
 'use client';
 
 import { useEffect } from 'react';
+import Image from 'next/image';
 
 const events = [
   {
@@ -48,11 +50,21 @@ export default function Home() {
       {/* Navbar */}
       <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#06110d]/80 backdrop-blur-xl">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+          <Image src="/images/logo_long.png" alt="Ctrl + Wine Logo" width={240} height={160} />
           <a href="#" className="text-lg font-semibold tracking-wide">
-            Ctrl + Wine
+            {/* Ctrl + Wine */}
           </a>
 
           <div className="hidden items-center gap-8 text-sm text-[#c8bfae] md:flex">
+            <a href="#about" className="hover:text-white">
+              關於 About
+            </a>
+            <a href="/winemenu" className="hover:text-white">
+              酒單 Wine
+            </a>
+            <a href="#menu" className="hover:text-white">
+              菜單 Menu
+            </a>
             <a href="#events" className="hover:text-white">
               活動 Events
             </a>

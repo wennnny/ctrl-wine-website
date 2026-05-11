@@ -58,12 +58,12 @@ export default function Navbar() {
             {menuOpen && (
                 <div className="border-t border-white/10 bg-[#06110d] px-6 py-6 md:hidden">
                     <div className="flex flex-col gap-6 text-lg text-[#f5f0e6]">
-                        <a href="#about">About</a>
-                        <a href="/winemenu">Wine</a>
-                        <a href="/menu">Menu</a>
-                        <a href="#events">Events</a>
-                        <a href="#collab">Collaboration</a>
-                        <a href="#contact">Contact</a>
+                        <a href="#about">關於 About</a>
+                        <a href="/winemenu">酒單 Wine</a>
+                        <a href="/menu">菜單 Menu</a>
+                        <a href="#events">活動 Events</a>
+                        <a href="#collab">合作 Collaboration</a>
+                        <a href="#contact">聯絡 Contact</a>
                     </div>
                 </div>
             )}

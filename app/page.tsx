@@ -55,7 +55,7 @@ export default function Home() {
             {/* Ctrl + Wine */}
           </a>
 
-          <div className="hidden items-center gap-8 text-sm text-[#c8bfae] md:flex">
+          <div className="flex items-center gap-4 overflow-x-auto whitespace-nowrap text-xs text-[#c8bfae] md:gap-8 md:text-sm">
             <a href="#about" className="hover:text-white">
               關於 About
             </a>
@@ -78,7 +78,7 @@ export default function Home() {
 
           <a
             href="#contact"
-            className="rounded-full border border-[#7b1e2b] px-4 py-2 text-sm text-[#f5f0e6] hover:bg-[#7b1e2b]"
+            className="hidden rounded-full border border-[#7b1e2b] px-4 py-2 text-sm text-[#f5f0e6] hover:bg-[#7b1e2b] md:block"
           >
             預約 Book Now
           </a>

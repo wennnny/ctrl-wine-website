@@ -1,3 +1,7 @@
+'use client';
+
+import { useEffect } from 'react';
+
 const events = [
   {
     title: "Wine Night",
@@ -22,6 +26,23 @@ const events = [
 ];
 
 export default function Home() {
+  useEffect(() => {
+    // Google Analytics
+    const script1 = document.createElement('script');
+    script1.async = true;
+    script1.src = 'https://www.googletagmanager.com/gtag/js?id=G-SSN3YP74FQ';
+    document.head.appendChild(script1);
+
+    const script2 = document.createElement('script');
+    script2.innerHTML = `
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-SSN3YP74FQ');
+    `;
+    document.head.appendChild(script2);
+  }, []);
+
   return (
     <main className="min-h-screen bg-[#06110d] text-[#f5f0e6]">
       {/* Navbar */}

@@ -3,6 +3,7 @@
 
 import { useEffect } from 'react';
 import Image from 'next/image';
+import Navbar from './components/Navbar';
 
 const events = [
   {
@@ -48,42 +49,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-[#06110d] text-[#f5f0e6]">
       {/* Navbar */}
-      <nav className="fixed left-0 top-0 z-50 w-full border-b border-white/10 bg-[#06110d]/80 backdrop-blur-xl">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <Image src="/images/logo_long.png" alt="Ctrl + Wine Logo" width={240} height={160} />
-          <a href="#" className="text-lg font-semibold tracking-wide">
-            {/* Ctrl + Wine */}
-          </a>
-
-          <div className="flex items-center gap-4 overflow-x-auto whitespace-nowrap text-xs text-[#c8bfae] md:gap-8 md:text-sm">
-            <a href="#about" className="hover:text-white">
-              關於 About
-            </a>
-            <a href="/winemenu" className="hover:text-white">
-              酒單 Wine
-            </a>
-            <a href="#menu" className="hover:text-white">
-              菜單 Menu
-            </a>
-            <a href="#events" className="hover:text-white">
-              活動 Events
-            </a>
-            <a href="#collab" className="hover:text-white">
-              合作 Collaboration
-            </a>
-            <a href="#contact" className="hover:text-white">
-              聯絡 Contact
-            </a>
-          </div>
-
-          <a
-            href="#contact"
-            className="hidden rounded-full border border-[#7b1e2b] px-4 py-2 text-sm text-[#f5f0e6] hover:bg-[#7b1e2b] md:block"
-          >
-            預約 Book Now
-          </a>
-        </div>
-      </nav>
+      <Navbar />
 
       {/* Hero */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-24 text-center">

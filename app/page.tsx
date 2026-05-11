@@ -56,9 +56,14 @@ export default function Home() {
         <div className="absolute left-1/2 top-1/2 h-[420px] w-[420px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#7b1e2b]/20 blur-3xl" />
 
         <div className="relative z-10 mx-auto max-w-4xl">
-          <div className="mx-auto mb-6 w-fit rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-sm text-[#c8bfae]">
-            Hsinchu｜20:00 – 03:00
-          </div>
+
+          {/* <Image
+            src="/images/logo_white.jpg"
+            alt="Ctrl + Wine Logo"
+            width={120}
+            height={120}
+            className="mx-auto mb-6"
+          /> */}
 
           <h1 className="text-6xl font-semibold tracking-tight md:text-8xl">
             Ctrl + Wine
@@ -72,6 +77,15 @@ export default function Home() {
             A late-night wine space in Hsinchu for engineers, creators,
             founders, and tired souls. Wine. Chill. Repeat.
           </p>
+
+          <div className="mx-auto mb-6 w-fit rounded-full border border-white/10 bg-white/[0.03] px-5 py-2 text-sm text-[#c8bfae]">
+            Hsinchu｜20:00 – 03:00
+          </div>
+
+          <div className="mt-8 rounded-2xl border border-[#9a2b39]/30 bg-white/[0.03] px-6 py-4 text-sm leading-7 text-[#c8bfae]">
+            空間較小，建議來電或私訊預留位置。<br />
+            Fixed Closed on Sunday｜每週日固定店休
+          </div>
 
           <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
             <a
@@ -184,11 +198,34 @@ export default function Home() {
       </section>
 
       {/* AdSense Placeholder */}
-      <section className="px-6 pb-24">
+      <section id="adsense" className="px-6 pb-24">
         <div className="mx-auto max-w-6xl rounded-3xl border border-dashed border-white/15 p-8 text-center text-sm text-[#aaa096]">
-          Google AdSense placeholder area｜未來通過申請後可放廣告碼
+          {/* Google AdSense placeholder area｜未來通過申請後可放廣告碼 */}
         </div>
       </section>
+
+      {/* Location */}
+      <div className="mt-8 overflow-hidden rounded-3xl border border-white/10">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3622.25078947574!2d121.01798307592018!3d24.78686454819748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3468379c5662cd2d%3A0x796712f1671e8ca6!2z5L6G5p2v5ZKW5ZWh44CQ6Zec5paw6ZaA5biC44CR!5e0!3m2!1szh-TW!2stw!4v1778522578464!5m2!1szh-TW!2stw"
+          width="30%"
+          height="400"
+          style={{ border: 0 }}
+          allowFullScreen
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div className="mt-6">
+        <a
+          href="https://maps.app.goo.gl/YJzasoobc9z6gMbt5"
+          target="_blank"
+          className="rounded-full bg-[#7b1e2b] px-6 py-3 text-sm font-medium text-white transition hover:bg-[#9a2636]"
+        >
+          Open in Google Maps
+        </a>
+      </div>
 
       {/* Contact */}
       <footer id="contact" className="border-t border-white/10 px-6 py-10">

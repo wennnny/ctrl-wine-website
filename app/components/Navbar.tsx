@@ -15,13 +15,13 @@ export default function Navbar() {
 
                 {/* Desktop Menu */}
                 <div className="hidden items-center gap-8 text-sm text-[#c8bfae] md:flex">
-                    <a href="#about" className="hover:text-white">
+                    <a href="/about" className="hover:text-white">
                         關於 About
                     </a>
                     <a href="/winemenu" className="hover:text-white">
                         酒單 Wine
                     </a>
-                    <a href="#menu" className="hover:text-white">
+                    <a href="/menu" className="hover:text-white">
                         菜單 Menu
                     </a>
                     <a href="#events" className="hover:text-white">
@@ -30,8 +30,8 @@ export default function Navbar() {
                     <a href="#collab" className="hover:text-white">
                         合作 Collaboration
                     </a>
-                    <a href="#contact" className="hover:text-white">
-                        聯絡 Contact
+                    <a href="#adsense" className="hover:text-white">
+                        品牌推廣 Brand Promotion
                     </a>
                 </div>
 
@@ -63,7 +63,7 @@ export default function Navbar() {
                         <a href="/menu">菜單 Menu</a>
                         <a href="#events">活動 Events</a>
                         <a href="#collab">合作 Collaboration</a>
-                        <a href="#contact">聯絡 Contact</a>
+                        <a href="#adsense">品牌推廣 Brand Promotion</a>
                     </div>
                 </div>
             )}

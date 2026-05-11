@@ -5,6 +5,26 @@ import { useEffect } from "react";
 
 const wines = [
     {
+        category: "Wine by the Glass｜單杯價格",
+        items: [
+            {
+                name: "當日紅酒精選 Daily Red Wine",
+                cost: 350,
+                desc: "看我們老闆今天心情如何",
+            },
+            {
+                name: "當日白酒精選 Daily White Wine",
+                cost: 350,
+                desc: "看我們老闆今天想開哪一隻",
+            },
+            {
+                name: "啤酒 Beer",
+                cost: 250,
+                desc: "最初經典生啤酒，偶爾會有特別款",
+            },
+        ],
+    },
+    {
         category: "RED WINE｜紅酒",
         items: [
             {
@@ -77,7 +97,7 @@ const wines = [
 ];
 
 function price(cost: number) {
-    return `NT$${(cost * 2).toLocaleString()}`;
+    return `NT$${(cost).toLocaleString()}`;
 }
 
 export default function MenuPage() {

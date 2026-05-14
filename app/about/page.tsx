@@ -78,7 +78,7 @@ export default function AboutPage() {
 
                 <div className="mt-16 flex flex-col gap-4 sm:flex-row">
                     <a
-                        href="/menu"
+                        href="/winemenu"
                         className="rounded-full bg-[#f5f0e6] px-8 py-3 text-center text-sm font-medium text-[#06110d]"
                     >
                         View Wine Menu

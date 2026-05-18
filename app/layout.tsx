@@ -14,7 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-Hant">
-      <body>{children}</body>
+      <body>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6375877304346058"
+          crossorigin="anonymous"></script>
+
+        {children}
+      </body>
     </html>
   );
 }

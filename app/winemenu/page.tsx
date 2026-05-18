@@ -8,12 +8,12 @@ const wines = [
         category: "Wine by the Glass｜單杯價格",
         items: [
             {
-                name: "當日紅酒精選 Daily Red Wine",
+                name: "當日精選紅酒 Daily Red Wine",
                 cost: 350,
                 desc: "看我們老闆今天心情如何",
             },
             {
-                name: "當日白酒精選 Daily White Wine",
+                name: "當日精選白酒 Daily White Wine",
                 cost: 350,
                 desc: "看我們老闆今天想開哪一隻",
             },
